@@ -15,7 +15,7 @@ export default defineConfig({
           ),
         ]
       : []),
-  ],
+  ],base:  process.env.VITE_BASE_PATH || "/softsell",
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
